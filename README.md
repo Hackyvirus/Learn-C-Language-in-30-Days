@@ -7,8 +7,45 @@ Welcome to the 30 Days of C Language Learning challenge! This repository is desi
 <details>
 <summary>Day 1: Setting Up</summary>
 
-- Install a C compiler and set up your development environment.
-- Write a simple "Hello World" program.
+- # Setting Up C Programming in Visual Studio Code on Windows
+
+## Introduction
+
+Visual Studio Code (VSCode) is a versatile and powerful code editor, and setting up C programming on Windows with VSCode is a straightforward process. This guide will walk you through the steps, including installing VSCode, a C compiler (GCC), and configuring the system PATH for seamless development.
+
+## Steps
+
+### 1. Install Visual Studio Code
+   - Download and install Visual Studio Code from [here](https://code.visualstudio.com/).
+
+### 2. Install a C Compiler (GCC)
+   - Download the mingw-w64 installer from [mingw-w64.org](https://mingw-w64.org/doku.php).
+   - Run the installer and follow the installation instructions.
+
+### 3. Install C/C++ Extension for Visual Studio Code
+   - Open VSCode.
+   - Go to Extensions (`Ctrl + Shift + X`), search for "C/C++," and install the extension provided by Microsoft.
+
+### 4. Configure the C/C++ Extension
+   - Open a C file or create a new one.
+   - Follow prompts to install the necessary tools or, if not prompted, click "Select a Kit" at the bottom right and choose the GCC toolchain.
+
+### 5. Add GCC to System PATH
+   - Find the directory where you installed GCC (e.g., `C:\Program Files\CodeBlocks\MinGW\bin`).
+   - Right-click on "This PC" > "Properties" > "Advanced system settings" > "Environment Variables."
+   - In the "System variables" section, select "Path" and click "Edit."
+   - Click "New" and add the path to the `bin` directory of your GCC installation.
+   - Click "OK" to close the windows.
+
+### 6. Write and Run Your First C Program
+   - Create a new C file and write a simple program.
+   - Save the file with a `.c` extension.
+   - Open a new terminal in VSCode (`Ctrl + `` `) and navigate to the directory containing your C file.
+   - Compile your program: `gcc your_program.c -o your_program`.
+   - Run the compiled program: `.\your_program`.
+
+By following these steps, you've set up a robust C programming environment in Visual Studio Code on Windows. Customize your development experience in VSCode and explore the world of C programming!
+
 
 </details>
 
